@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./favicon.ico">
+    <title>Bootstrap | Design</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
+    <link href="./tooltip-viewport.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:"><i>Muhammad Awais</i></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:">Home</a></li>
+            <li><a href="javascript:">About</a></li>
+            <li><a href="javascript:">Contact</a></li>
+            <li><a href="javascript:">Help</a></li>
+        </ul><!--/.nav navbar-nav -->
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown active">
+                <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown"
+                   role="button" aria-haspopup="true" aria-expanded="false">Account
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header active">What's new !</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="javascript:">Login</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="javascript:">Sign-up</a></li>
+                </ul>
+            </li><!--/.dropdown active-->
+            <li><a href="javascript:">Log-out</a></li>
+        </ul><!--/.nav navbar-nav navbar-right -->
+    </div><!--/.navbar-collapse collapse -->
+  </div><!--/.container -->
+</nav><!--/.navbar navbar-inverse navbar-fixed-top -->
+
+<div class="container theme-showcase" role="main">
+
+    <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p>
+            This is a template showcasing the optional theme stylesheet
+            included in Bootstrap. Use it as a starting point to create
+            something more unique by building on or modifying it.
+        </p>
+        <div class="alert-warning">
+            Please check every detail and Rating Bar
+        </div>
+        <div ng-app="ui.bootstrap.demo" class="list-group">
+                <h2 class="list-group-item active list-group-item-heading">Top products #1</h2>
+                    <div ng-controller="RatingDemoCtrl">
+                        <div class="navbar-brand">
+                            <strong>
+                                Rating
+                            </strong>
+                            <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                            <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar">
+                                {{percent}}%
+                            </span>
+                        </div>
+                    </div>
+        </div><!--/.list-group --> <!--/ui.bootstrap -->
+    </div><!--/.jumbotron -->
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/100%x200"
+                     alt="100%x200" src="img1.jpg"
+                     style="height: 200px; width: 100%;
+                     display: block;">
+                <div class="caption">
+                    <h3>Product 1.1</h3>
+                    <p>
+                        This example is a quick exercise to illustrate
+                        how the default, static and fixed to top navbar work.
+                        It includes the responsive CSS and HTML, so it also
+                        adapts to your viewport and device.
+                    </p>
+                    <div>
+                        <a href="javascript:" class="btn btn-default tooltip-right" title="Some Detail here..." role="button">Detail</a>
+                        <a href="javascript:" class="btn btn-primary" role="button">Buy</a>
+                    </div>
+                </div><!--/.caption -->
+            </div><!--/.thumbnail -->
+        </div><!--/.col-sm-4 -->
+
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/100%x200"
+                     alt="100%x200" src="img2.jpg"
+                     style="height: 200px; width: 100%;
+                     display: block;">
+                <div class="caption">
+                    <h3>Product 1.2</h3>
+                    <p>
+                        This example is a quick exercise to illustrate
+                        how the default, static and fixed to top navbar work.
+                        It includes the responsive CSS and HTML, so it also
+                        adapts to your viewport and device.
+                    </p>
+                    <div>
+                        <a href="javascript:" class="btn btn-default tooltip-right" title="Some Detail here..." role="button">Detail</a>
+                        <a href="javascript:" class="btn btn-primary" role="button">Buy</a>
+                    </div>
+                </div><!--/.caption -->
+          </div><!--/.thumbnail -->
+        </div><!--/.col-sm-4-->
+
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/100%x200"
+                     alt="100%x200" src="img3.jpg"
+                     style="height: 200px; width: 100%;
+                     display: block;">
+                <div class="caption">
+                    <h3>Product 1.3</h3>
+                    <p>
+                        This example is a quick exercise to illustrate
+                        how the default, static and fixed to top navbar work.
+                        It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+                    </p>
+                    <div>
+                        <a href="javascript:" class="btn btn-default tooltip-right" title="Some Detail here..." role="button">Detail</a>
+                        <a href="javascript:" class="btn btn-primary" role="button">Buy</a>
+                    </div>
+                </div><!--/.caption -->
+            </div><!--/.thumbnail -->
+        </div><!--/.col-sm-4-->
+    </div><!--/.row-->
+
+    <div class="well">
+        <p>
+            This is a template showcasing the optional theme stylesheet
+            included in Bootstrap. Use it as a starting point to create
+            something more unique by building on. This is a template
+            showcasing the optional theme stylesheet included in Bootstrap.
+            Use it as a starting point to create something more unique
+            by building on or modifying it.
+        </p>
+    </div><!--/.well -->
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="caption">
+                <h3>Product 1.4</h3>
+                <img data-src="holder.js/100%x200"
+                     alt="100%x200" src="img.png"
+                     style="height: 200px; width: 100%;
+                     display: block;">
+                <p>
+                    This example is a quick exercise to illustrate how the default,
+                    static and fixed to top navbar work. It includes the responsive
+                    CSS and HTML, so it also adapts to your viewport and device.
+                    This example is a quick exercise to illustrate how the default,
+                    static and fixed to top navbar work. It includes the responsive
+                    CSS and HTML, so it also adapts to your viewport and device
+                </p>
+                <div>
+                    <a href="javascript:" class="btn btn-default tooltip-right" title="Some Detail here..." role="button">Detail</a>
+                    <a href="javascript:" class="btn btn-primary" role="button">Buy</a>
+                </div>
+            </div><!--/.caption-->
+        </div><!--/.col-sm-8-->
+
+        <div class="col-sm-4">
+            <div class="caption">
+                <h3>Product 1.5</h3>
+                <img data-src="holder.js/100%x200"
+                     alt="100%x200" src="img.png"
+                     style="height: 200px; width: 100%;
+                     display: block;">
+                <p>
+                    This example is a quick exercise to illustrate how the default,
+                    static and fixed to top navbar work. It includes the responsive
+                    CSS and HTML, so it also adapts to your viewport and device.
+                </p>
+                <div>
+                    <a href="javascript:" class="btn btn-default tooltip-right" title="Some Detail here..." role="button">Detail</a>
+                    <a href="javascript:" class="btn btn-primary" role="button">Buy</a>
+                </div>
+            </div><!--/.caption-->
+        </div><!--/.col-sm-4 -->
+    </div><!--/.row-->
+
+</div><!--/.container theme-showcase-->
+
+
+<div class="container">
+    <footer class="modal-footer">
+        <p>&copy; 2016 Awais,</p>
+    </footer>
+</div><!--/.container -->
+
+<script src="bootstrap/js/angular.min.js"></script>
+<script src="bootstrap/js/ui-bootstrap.js"></script>
+<script src=./js13.js></script>
+
+<script src="./bootstrap/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./bootstrap/js/jquery.min.js"><\/script>')</script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/tooltip-viewport.js"></script>
+
+</body>
+</html>
